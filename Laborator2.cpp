@@ -103,7 +103,7 @@ void gramatica1(string S, string A, string B, int lungime, string sir_actual = "
 
 int main()
 {
-    gramatica1("S", "A", "B", 4);
+    gramatica1("S", "A", "B", 6);
 }
 
 //Problema 3, Gramatica 2
@@ -112,38 +112,38 @@ int main()
 #include <string>
 using namespace std;
 
-void generate_strings_gramatica2(string S, string X, string Y, string Z, int length, string current_string = "") {
+void gramatica2(string S, string X, string Y, string Z, int length, string current_string = "") {
     if (length == 0) {
         cout << current_string << " ";
         return;
     }
 
     if (current_string.find(S) != string::npos) {
-        generate_strings_gramatica2(X, X, Y, Z, length - 1, current_string.replace(current_string.find(S), 1, "X"));
+        gramatica2(X, X, Y, Z, length - 1, current_string.replace(current_string.find(S), 1, "X"));
     } else {
-        generate_strings_gramatica2(X, X, Y, Z, length - 1, current_string + X);
+        gramatica2(X, X, Y, Z, length - 1, current_string + X);
     }
 
     if (current_string.find(Y) != string::npos) {
-        generate_strings_gramatica2(Y, X, Y, Z, length - 1, current_string.replace(current_string.find(Y), 1, "2"));
-        generate_strings_gramatica2(Y, X, Y, Z, length - 1, current_string.replace(current_string.find(Y), 1, "X"));
+        gramatica2(Y, X, Y, Z, length - 1, current_string.replace(current_string.find(Y), 1, "2"));
+        gramatica2(Y, X, Y, Z, length - 1, current_string.replace(current_string.find(Y), 1, "X"));
     } else {
-        generate_strings_gramatica2(Y, X, Y, Z, length - 1, current_string + "2");
-        generate_strings_gramatica2(Y, X, Y, Z, length - 1, current_string + Y);
+        gramatica2(Y, X, Y, Z, length - 1, current_string + "2");
+        gramatica2(Y, X, Y, Z, length - 1, current_string + Y);
     }
 
     if (current_string.find(Z) != string::npos) {
-        generate_strings_gramatica2(Z, X, Y, Z, length - 1, current_string.replace(current_string.find(Z), 1, "3"));
-        generate_strings_gramatica2(Z, X, Y, Z, length - 1, current_string.replace(current_string.find(Z), 1, "4"));
-        generate_strings_gramatica2(Z, X, Y, Z, length - 1, current_string.replace(current_string.find(Z), 1, "X"));
+        gramatica2(Z, X, Y, Z, length - 1, current_string.replace(current_string.find(Z), 1, "3"));
+        gramatica2(Z, X, Y, Z, length - 1, current_string.replace(current_string.find(Z), 1, "4"));
+        gramatica2(Z, X, Y, Z, length - 1, current_string.replace(current_string.find(Z), 1, "X"));
     } else {
-        generate_strings_gramatica2(Z, X, Y, Z, length - 1, current_string + "3");
-        generate_strings_gramatica2(Z, X, Y, Z, length - 1, current_string + "4");
-        generate_strings_gramatica2(Z, X, Y, Z, length - 1, current_string + Z);
+        gramatica2(Z, X, Y, Z, length - 1, current_string + "3");
+        gramatica2(Z, X, Y, Z, length - 1, current_string + "4");
+        gramatica2(Z, X, Y, Z, length - 1, current_string + Z);
     }
 }
 
 int main()
 {
-generate_strings_gramatica2("S", "X", "Y", "Z", 4);
+gramatica2("S", "X", "Y", "Z", 3);
 }
