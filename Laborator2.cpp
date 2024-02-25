@@ -1,4 +1,4 @@
-/*Problema 1
+//Problema 1
 
 #include <iostream>
 #include <vector>
@@ -37,7 +37,7 @@ int main()
     return 0;
 }
 
-Problema 2
+//Problema 2
 
 #include <iostream>
 #include <vector>
@@ -80,7 +80,7 @@ int main() {
     return 0;
 }
 
-Problema 3, Gramatica 1
+//Problema 3, Gramatica 1
 
 #include <iostream>
 #include <string>
@@ -106,7 +106,7 @@ int main()
     gramatica1("S", "A", "B", 4);
 }
 
-Problema 3, Gramatica 2
+//Problema 3, Gramatica 2
 
 #include <iostream>
 #include <string>
@@ -147,5 +147,3 @@ int main()
 {
 generate_strings_gramatica2("S", "X", "Y", "Z", 4);
 }
-
-*/
