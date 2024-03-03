@@ -69,7 +69,7 @@ bool check(const string& content)
         int quantity = stoi(it->str(4));
         if(quantity < 0)
         {
-            cout << "Error! This number '" << it->str(1) << "' is negative.\n";
+            cout << "Error! This number '" << it->str(4) << "' is negative.\n";
             errors = true;
         }
 
