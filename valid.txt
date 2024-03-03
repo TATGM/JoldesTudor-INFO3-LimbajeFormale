@@ -1,0 +1,4 @@
+Client: Clientul doi
+Produs: Calculator, Pret: 3000.00, TVA: 19%, Cantitate: 2
+Produs: Monitor, Pret: 450.00, TVA: 19%, Cantitate: 1
+Produs: Tastatura, Pret: 85.00, TVA: 19%, Cantitate: 3
