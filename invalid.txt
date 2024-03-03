@@ -1,0 +1,3 @@
+Client: Clientul unu
+Produs: Laptop, Pret: 1700.00, TVA: 19%, Cantitate: 3
+Produs: Televizor, Pret: 800.00, TVA: 19%, Cantitate: -2
