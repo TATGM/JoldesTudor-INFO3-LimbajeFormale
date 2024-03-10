@@ -47,7 +47,7 @@ public:
     }
 
     void finish_order() {
-        cout << "The order for " << chosen_drink << " is complete!\n;
+        cout << "The order for " << chosen_drink << " is complete!\n";
         chosen_drink = "";
     }
 
