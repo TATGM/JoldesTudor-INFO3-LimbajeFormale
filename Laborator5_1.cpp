@@ -1,3 +1,5 @@
+//am folosit atât surse din laboratoarele anterioare, cât și website-ul menționat: https://products.codeporting.app/convert/ai/python-to-cpp/ (în cazul unor îndoieli)
+
 #include <iostream>
 #include <vector>
 #include <unordered_map>
