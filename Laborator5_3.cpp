@@ -13,7 +13,7 @@ vector<string> exits = {"O1", "O2"};
 unordered_map<pair<string, string>, pair<string, string>> tranzitii = {
     {{"Q1", "X"}, {"Q1", "O1"}},
     {{"Q1", "Y"}, {"Q2", "O2"}},
-    {{"Q2", "X"}, {"Q1", "O2"}},
+    {{"Q2", "X"}, {"Q1", "O1"}},
     {{"Q2", "Y"}, {"Q2", "O2"}}
 }
 
