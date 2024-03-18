@@ -32,8 +32,8 @@ string verifica(string stare, string litera)  {
 
 int main()
 {
-    cout << "Starea " + states[0] + " cu litera " + letters[0] + ": " + rezultat(states[0], letters[0]) << endl;
-    cout << "Starea " + states[0] + " cu litera " + letters[1] + ": " + rezultat(states[0], letters[1]) << endl;
-    cout << "Starea " + states[1] + " cu litera " + letters[0] + ": " + rezultat(states[1], letters[0]) << endl;
-    cout << "Starea " + states[1] + " cu litera " + letters[1] + ": " + rezultat(states[1], letters[1]) << endl;
+    cout << "Starea " + states[0] + " cu litera " + letters[0] + ": " + verifica(states[0], letters[0]) << endl;
+    cout << "Starea " + states[0] + " cu litera " + letters[1] + ": " + verifica(states[0], letters[1]) << endl;
+    cout << "Starea " + states[1] + " cu litera " + letters[0] + ": " + verifica(states[1], letters[0]) << endl;
+    cout << "Starea " + states[1] + " cu litera " + letters[1] + ": " + verifica(states[1], letters[1]) << endl;
 }
