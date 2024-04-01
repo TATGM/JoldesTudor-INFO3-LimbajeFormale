@@ -1,3 +1,5 @@
+//am adăugat cod, pentru a citi de la tastatură o sumă anume și vremea preferată de turist
+
 #include <iostream>
 #include <string>
 #include <vector>
