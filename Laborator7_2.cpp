@@ -38,9 +38,9 @@ int main() {
     int buget; string vremeDorita;
     cin>>buget>>vremeDorita;
     cout << "Destinatii disponibile in functie de buget si vreme dorita:\n";
-        //the auto specifier is used for auto type deduction.
-        //destinatie is the type of the element of the sequence represented by destinatii, or a reference to that type.
-        //destinatii represents a suitable sequence or a braced-init-list.
+    //the auto specifier is used for auto type deduction.
+    //destinatie is the type of the element of the sequence represented by destinations, or a reference to that type.
+    //destinations represents a suitable sequence or a braced-init-list.
     for (auto& destinatie : destinations) {
         if (destinatie.buget_cerut <= buget && destinatie.vreme_aleasa == vremeDorita) {
             destinatie.InformatiiDestinatie();
